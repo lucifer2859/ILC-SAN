@@ -32,9 +32,9 @@ or
 
 ```
 python hybrid_td3_cuda_norm.py --env HalfCheetah-v3 
-							   --encode      [pop-det|pop|layer]
+			       --encode      [pop-det|pop|layer]
                                --decode      [last-mem|max-mem|mean-mem|fr-mlp]
-							   --neurons     [LIF|DN]
+			       --neurons     [LIF|DN]
                                --connections [intra|no-bias|no-self|no-lateral|bias|self|lateral|none]
 ```
 
@@ -62,8 +62,8 @@ To test the TD3-trained ILC-SAN/PopSAN/MDC-SAN, execute the following commands:
 
 ```
 python test_hybrid_td3_cpu.py --env HalfCheetah-v3 
-							  --encode      [pop-det|pop|layer]
+			      --encode      [pop-det|pop|layer]
                               --decode      [last-mem|max-mem|mean-mem|fr-mlp]
-							  --neurons     [LIF|DN]
+			      --neurons     [LIF|DN]
                               --connections [intra|no-bias|no-self|no-lateral|bias|self|lateral|none]
 ```

@@ -312,7 +312,7 @@ class MDCSpikeActor(nn.Module):
     
     def __init__(self, obs_dim, act_dim, enc_pop_dim, dec_pop_dim, hidden_sizes,
                  mean_range, std, spike_ts, act_limit, device, encode, decode, 
-                 v_decay, neurons, lateral):
+                 v_decay, neurons, connections):
         super().__init__()
         self.act_limit = act_limit
         self.obs_dim = obs_dim

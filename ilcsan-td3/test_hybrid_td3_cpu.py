@@ -80,10 +80,10 @@ if __name__ == '__main__':
     spike_ts = 5
 
     if 'pop' in args.encode:
-        file_dir = './ilc-san/params/hybrid-td3_td3-ilcsan-' + args.env + '-encoder-dim-' + str(args.encoder_pop_dim) + '-decoder-dim-' + \
+        file_dir = './params/hybrid-td3_td3-ilcsan-' + args.env + '-encoder-dim-' + str(args.encoder_pop_dim) + '-decoder-dim-' + \
                    str(args.decoder_pop_dim) + '-' + args.encode + '_' + args.decode + '_' + args.neurons
     else:
-        file_dir = './ilc-san/pop-san/params/hybrid-td3_td3-ilcsan-' + args.env + '-decoder-dim-' + str(args.decoder_pop_dim) + \
+        file_dir = './params/hybrid-td3_td3-ilcsan-' + args.env + '-decoder-dim-' + str(args.decoder_pop_dim) + \
                    '-' + args.encode + '_' + args.decode + '_' + args.neurons
 
     if args.v_decay < 1.0:

@@ -188,11 +188,11 @@ def spike_td3(env_fn, actor_critic=SpikeActorDeepCritic, ac_kwargs=dict(), seed=
     save_test_reward = []
     save_test_reward_steps = []
     try:
-        os.mkdir("./ilc-san/params")
+        os.mkdir("./params")
         print("Directory params Created")
     except FileExistsError:
         print("Directory params already exists")
-    model_dir = "./ilc-san/params/hybrid-td3_" + tb_comment
+    model_dir = "./params/hybrid-td3_" + tb_comment
     try:
         os.mkdir(model_dir)
         print("Directory ", model_dir, " Created")
